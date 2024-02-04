@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <title>ileke.art</title>
+</head>
+<body>
+  <main class="header">
+  <nav>
+    <img src="IBCNE5570.JPG" alt="logo">
+    <div >
+    <ul>
+      <button><li><a href=""><b>HOME</b></a></li></button>
+      <button><li><a href=""><b>ABOUT</b></a></li></button>
+      <button><li><a href=""><b>DESIGNS</b></a></li></button>
+      <button><li><a href=""><b>CONTACT-US</b></a></li></button>
+    </ul>
+  </div>
+  </nav>
+  <section class="welcome">
+    <h1>Wecome to ileke.art</h1>
+    <p><b>We offer you hand crafted home made beads <br>
+      Made with love as we always remeber that waistbeads are not just 
+      jewelries, they hold centuries of african culture and traditions.
+      And every order comes with a fun fact about the art.
+      you want to reach us on any of our platforms?? WE ARE JUST ONE <a href="">CLICK</a> AWAY!!</b>
+    </p>
+  </section>
+</main>
+  <section class="about">
+      <h2>About us</h2>
+      <p> <b>We intent to be your favorite bead maker as you 
+        help us in bringing our art to life.
+        Our waist beads are hand crafted and our tools are personally hand picked
+        by us to suit your aura.<br>
+        WHY CHOOSE US??<br>
+        Every strand with us is special because each designs are made to serve 
+        our women differently.</b> 
+      </p>
+  </section>
+    <section class="about1">
+    <div class="about2">
+      <img src="IMG_E6441.JPG" alt="Beads"> 
+    </div>
+    <div class="about3">
+    <p ><b>Waist beads are like traditional lingerie.<br> 
+      And our waist beads comes in different sets,
+    with the lowest being a set of 3 different amazing 
+    designs selected by you. And the highest
+    a set of 5.<br>
+    Do you want more???? Yes we can customise more!!.
+    </div>
+  </section>
+  <section class="designs">
+    <div class="designs1">
+<img src="IMG_E6442.JPG" id="image1" onclick="changeImage('image1')">
+<img src="IMG_6517.JPG" id="image2" onclick="changeImage('image2')">
+<img src="IMG_E6443.JPG" id="image3" onclick="changeImage('image3')">
+<img src="IMG_6518.JPG" id="image4" onclick="changeImage('image4')">
+<img src="IMG_E6444.JPG" id="image5" onclick="changeImage('image5')">
+<img src="IMG_6519.JPG" id="image6" onclick= "changeImage('image6')">
+<img src="IMG_E6445.JPG" id="image7" onclick="changeImage('image7')">
+<img src="IMG_6520.JPG" id="image8" onclick="changeImage('image8')">
+<img src="IMG_E6446.JPG" id="image9" onclick="changeImage('image9')">
+<img src="IMG_E6522.JPG" id="image10" onclick="changeImage('image10')">
+<img src="IMG_E6447.JPG" id="image11" onclick="changeImage('image11')">
+<img src="IMG_E6448.JPG" id="image12" onclick="changeImage('image12')">
+</div>
+  </section>
+</body> 
+</html>
+.header{
+  min-height: 100vh;
+  background-image:  url(IMG_E6445.JPG);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+button{
+  background-color: burlywood;
+  border-radius: 45%;
+  border: 2px solid white;
+}
+nav{
+  padding: 2% 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} 
+nav img{
+  width: 100px;
+  border-radius: 0%;
+  border: 10px solid burlywood;
+}
+ul{
+  flex: 1;
+  text-align: right;
+}
+ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 13px;
+}
+h1{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.welcome{
+  background-color: burlywood;
+  margin: 5%;
+  padding: 3%;
+  height: 200px;
+  border: 10px solid white;
+
+}
+div{
+  display: inline;
+  padding: 2%;
+  margin: 2%;
+}
+h2{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.about{
+  background-color: burlywood;
+  margin: 3%;
+  padding: 3%;
+  height: 200px;
+}
+.about1{
+  margin: 2%;
+  padding: 2%;
+  align-items: center;
+  display: flex;
+}
+.about1 img{
+  height: 300px;
+  width: 300px;
+  margin: 0%;
+  padding:0%;
+}
+.about2,.about3{
+  flex: 1;
+}
+.about3 p{
+  font-size: 25px;
+  font-style: italic;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', 
+  sans-serif
+  
+}
+.designs{
+  background-image: url(IMG_E6508.JPG);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin: 3%;
+  padding: 3% ;
+  height: 500px;
+  width: 1000px;
+  
+}
+.designs1{
+display: grid;
+grid-auto-flow: column;
+scroll-behavior: auto;
+gap: 1.2rem;
+overflow: auto;
+overscroll-behavior-x: contain;
+scroll-snap-type: x mandatory;
+scrollbar-width: none;
+}
+.designs img{
+  height: 500px;
+  width: 1000px;
+}
